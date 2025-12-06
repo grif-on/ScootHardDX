@@ -95,12 +95,6 @@ Class SHDX_PlayerPawn : PlayerPawn
 		return player.morphTics <= 1 || bCrouchableMorph;
 	}
 	
-	override void BeginPlay()
-	{
-		Super.BeginPlay();
-		MarkPreCacheSounds();
-	}
-	
 	// Make friction be less slippery
 	// Accensus provided me this
 	void AdjustFrictionForMovement()
