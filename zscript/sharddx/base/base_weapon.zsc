@@ -67,7 +67,7 @@ Class SHDX_BaseQuickKick : CustomInventory
 			if (owner.player.cmd.buttons & BT_USER1)
 			{
 				owner.UseInventory(self);
-				owner.player.mo.PlayAttacking2();
+				owner.player.mo.PlayAttacking();
 				iskicking = true;
 			}
 		}

@@ -268,12 +268,12 @@ Class SHDX_ScootalooPlayer : SHDX_PlayerPawn
 			SCOO BCDE 4;
 			Loop;
 		
-		Melee:
+		Missile:
 			SCOO N 3;
 			SCOO A 2;
 			Goto Spawn;
 			
-		Missile:
+		Melee:
 			SCOO FGH 2 BRIGHT;
 			Goto Spawn;
 			
