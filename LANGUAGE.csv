@@ -173,7 +173,7 @@ PLAYING THE GAME (WEAPONS CONTINUED),SHDX_HELP_HEADER_MENU4,,,,,,,,,,,JOUER AU J
 Blaster - You start with this weapon. Never runs out of ammo.
 Submachine Gun - Rapid fire goodness. Infinite ammo.",SHDX_HELP_MENU4,,,,,,,,,,,"Armes à Balles:
 Blaster - Vous commencez avec cette arme. Ne s'épuise jamais de balles.
-Mitraillette - Plaisir du Tire Rapide. Munitions Infinies.",,,,,,,,,,,,
+Mitraillette - Plaisir du Tir Rapide. Munitions Infinies.",,,,,,,,,,,,
 PLAYING THE GAME (MISSILE WEAPONS),SHDX_HELP_HEADER_MENU4A,,,,,,,,,,,JOUER AU JEU (ARMES À MISSILES),,,,,,,,,,,,
 "Missile Launcher
 
@@ -185,12 +185,12 @@ A basic rocket launcher.
 Contains 10 shots.",SHDX_HELP_MENU4A,,,,,,,,,,,"Lance-Missiles
 
 Tir Primaire - Tir droit de missile.
-Secondary Fire - Tire une grenade rebondissante.
+Tir Secondaire - Tire une grenade rebondissante.
 
 Un lance-roquettes basique.
 
 Contient 10 tirs.",,,,,,,,,,,,
-PLAYING THE GAME (MISSILE WEAPONS CONTINUED),SHDX_HELP_HEADER_MENU4B,,,,,,,,,,,,,,,,,,,,,,,
+PLAYING THE GAME (MISSILE WEAPONS CONTINUED),SHDX_HELP_HEADER_MENU4B,,,,,,,,,,,JOUER AU JEU (CONTINUATION ARMES À MISSILES),,,,,,,,,,,,
 "FillySeeker
 
 Primary Fire - Shoots a heat-seeking missile at the cost
@@ -200,8 +200,17 @@ of 4 shots.
 
 A modified rocket launcher meant for crowd control.
 
-Contains 8 shots.",SHDX_HELP_MENU4B,,,,,,,,,,,,,,,,,,,,,,,
-PLAYING THE GAME (WEATHER WEAPONS),SHDX_HELP_HEADER_MENU4C,,,,,,,,,,,,,,,,,,,,,,,
+Contains 8 shots.",SHDX_HELP_MENU4B,,,,,,,,,,,"FillySeeker
+
+Tir Primaire - Tire un missile à tête chercheuse au coût
+d'un tir .
+Tir Secondaire - Tire une grappe de grenades au coût
+de 4 tirs.
+
+Un lance-roquettes modifié pour le contrôle de foule.
+
+Contient 8 tirs.",,,,,,,,,,,,
+PLAYING THE GAME (WEATHER WEAPONS),SHDX_HELP_HEADER_MENU4C,,,,,,,,,,,JOUER AU JEU (ARMES MÉTÉOROLOGIQUES),,,,,,,,,,,,
 "Hailer
 
 Primary Fire - Shoots a single freezing hail cores at the
@@ -211,7 +220,7 @@ at the cost of 5 shots.
 
 Enemies that can freeze will freeze solid.
 
-Contains 40 shots.",SHDX_HELP_MENU4C,,,,,,,,,,,,,,,,,,,,,,,
+Contains 40 shots.",SHDX_HELP_MENU4C,,,,,,,,,,,Hailer,,,,,,,,,,,,
 PLAYING THE GAME (WEATHER WEAPONS CONTINUED),SHDX_HELP_HEADER_MENU4D,,,,,,,,,,,,,,,,,,,,,,,
 "Lightning Gun
 
