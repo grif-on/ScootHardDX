@@ -16,6 +16,10 @@ ListMenu "MainMenu"
 	TextItem "$MNU_SHARDDX_HELP",		"h",	"SHDX_ReadThisMenu"
 	TextItem "$MNU_SHARDDX_CREDITS",		"c",	"SHDX_CreditsMenu"
 	TextItem "$MNU_SHARDDX_QUIT", 		"e",	"QuitMenu"
+	
+	Font "confont", "Font.CR_GRAY"
+	StaticTextCentered 324, 4, "$SHDX_TITLEMAP_VERSION_PREFIX"
+	StaticTextCentered 324, 14, "$SHDX_VERSION"
 }
 
 LISTMENU "EpisodeMenu"
