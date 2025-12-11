@@ -38,23 +38,21 @@ del estado de salvar más reciente",,,pour démarrer votre sauvegarde la plus r�
 or,SHDX_KEYBINDOR,,,,,,,,o,,,ou,,,,,,,,,,,,
 Press use (default: E) to swap weapon.,SHDX_WEAPONMSG,,,,,,,,,,,,,,,,,,,,,,,
 ,,Titlemap,,,,,,,,,,,,,,,,,,,,,,
-Waffle Iron Studios(TM) Scoot Hard DX(TM),SHDX_TITLEMAP_FINAL1,,,,,,,,,,,,,,,,,,,,,,,
-WI/GZDoom 4.6 Compatible,SHDX_TITLEMAP_FINAL3,,,,,,,,Compatible con GZDoom 4.6,,,,,,,,,,,,,,,
+FILE: Scoot Hard DX(TM),SHDX_TITLEMAP_GAMENAME,,,,,,,,,,,,,,,,,,,,,,,
 Version,SHDX_TITLEMAP_VERSION_PREFIX,,,,,,,,,,,,,,,,,,,,,,,
-MultiThreaded Enabled,SHDX_TITLEMAP_MULTI,,,,,,,,,,,,,,,,,,,,,,,
-Waffle Iron Systems(TM) WaffleTower i7,SHDX_TITLEMAP_SANYAUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-"
-HAL: Version 1.12            1/07/2011
-HAL: Processor is a Pegasystem AE-1000 Compatible(TM) Rev. 3.3
-HAL: Pegasus Revision 2.4
-HAL: L2 cache is not installed.",SHDX_TITLEMAP_SCOOTALOOUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-Cloudsdale Weather Corporation(TM) Cumulonimbus(TM) Workstation,SHDX_TITLEMAP_MAIMBOWUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-Marshmallow HAL 2.4 - Cutie Mark Acquisition Program(TM),SHDX_TITLEMAP_SWEETIEUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-Waffle Iron Systems(TM) RubyStation 255n,SHDX_TITLEMAP_NAVYUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-Bordeaux Technologies(TM) Warpstation 666n,SHDX_TITLEMAP_BORDEAUXUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-Hat Kid Industries(TM) Work-N-Play System 1024,SHDX_TITLEMAP_ELLIEUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-Peridot Systems(TM) SpinelStation,SHDX_TITLEMAP_MISTERBAMANUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
-No Unironically Fuck You Nukkus Go Away You Don't Get a HAL,SHDX_TITLEMAP_NUKKUSUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Cloudsdale Generic Mark-%LETTER%(TM) Workstation",SHDX_TITLEMAP_ANYOTHERUSERNAME, Generic fake bootup message based on first username letter,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Pegasystem AE-1000 ChickWin(TM)",SHDX_TITLEMAP_SCOOTALOOUSERNAME,Custom fake bootup message for default (Scootaloo) username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Waffle Iron Systems(TM) WaffleTower i7",SHDX_TITLEMAP_SANYAUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Cloudsdale Weather Corporation(TM) Cumulonimbus(TM) Workstation",SHDX_TITLEMAP_MAIMBOWUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Marshmallow 2.4 - Cutie Mark Acquisition Program(TM)",SHDX_TITLEMAP_SWEETIEUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Waffle Iron Systems(TM) RubyStation 255n",SHDX_TITLEMAP_NAVYUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Bordeaux Technologies(TM) Warpstation 666n",SHDX_TITLEMAP_BORDEAUXUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Hat Kid Industries(TM) Work-N-Play System 1024",SHDX_TITLEMAP_ELLIEUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"HAL: Peridot Systems(TM) SpinelStation",SHDX_TITLEMAP_MISTERBAMANUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+"No Unironically Fuck You Nukkus Go Away You Don't Get a HAL",SHDX_TITLEMAP_NUKKUSUSERNAME,Custom fake bootup message based on username,,,,,,,,,,,,,,,,,,,,,,
+PORT: WI/GZDoom 4.6 Compatible,SHDX_TITLEMAP_PORT,,,,,,,,PORT: Compatible con WI/GZDoom 4.6,,,,,,,,,,,,,,,
+MultiThread: Enabled,SHDX_TITLEMAP_MULTI_ENABLED,,,,,,,,,,,,,,,,,,,,,,,
+MultiThread: Unavailable,SHDX_TITLEMAP_MULTI_UNAVAILABLE,,,,,,,,,,,,,,,,,,,,,,,
 "Scoot Hard DX is a fair use parody. My Little Pony: Friendship is Magic
 is owned by Hasbro. This is not endorsed by them nor is meant to
 replace any official product. It is also not intended for kids. It is

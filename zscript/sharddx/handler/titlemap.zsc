@@ -1,5 +1,6 @@
 /*
 Copyright 2020 Sanya K. Waffles
+Copyright 2025 Grif_on
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 
@@ -71,20 +72,19 @@ class SHDX_TitlemapEvent : EventHandler
 		}
 	}
 	
-	ui bool, String GetHalForUserName()
+	ui String GetHalForUserName()
 	{
-		bool haldetected = false;
 		String returnedstring;
 		
 		String un = players[consoleplayer].GetUserName();
 		
-		if (un ~== "sanya" || un ~== "sanyawaffles")
-		{
-			returnedstring = StringTable.Localize("$SHDX_TITLEMAP_SANYAUSERNAME");
-		}
-		else if (un ~== "scootaloo")
+		if (un ~== "scootaloo")
 		{
 			returnedstring = StringTable.Localize("$SHDX_TITLEMAP_SCOOTALOOUSERNAME");
+		}
+		else if (un ~== "sanya" || un ~== "sanyawaffles")
+		{
+			returnedstring = StringTable.Localize("$SHDX_TITLEMAP_SANYAUSERNAME");
 		}
 		else if (un ~== "sweetie belle" || un ~== "sweetie bot")
 		{
@@ -111,33 +111,40 @@ class SHDX_TitlemapEvent : EventHandler
 			returnedstring = StringTable.Localize("$SHDX_TITLEMAP_NUKKUSUSERNAME");
 		}
 		
-		if (returnedstring.Length() > 0)
-			haldetected = true;
+		if (returnedstring.Length() <= 0)
+		{
+			if (un.Length() <= 0)
+			{
+				un = "I";
+			}
+			
+			string firstchar = un.CharAt(0).MakeUpper();
+			
+			string alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+			if (alphabet.IndexOf(firstchar) == -1) {
+				firstchar = "V";
+			}
+			
+			returnedstring = StringTable.Localize("$SHDX_TITLEMAP_ANYOTHERUSERNAME");
+			returnedstring.Replace("%LETTER%", firstchar);
+		}
 		
-		return haldetected, returnedstring;
+		return returnedstring;
 	}
 	
 	ui void DrawBootInformation(Vector2 ss)
 	{
-		bool hal;
 		String halstr;
 		String bootmsg;
-		[hal, halstr] = GetHalForUserName();
-		String mp = CVar.GetCvar('r_multithreaded', players[consoleplayer]).GetBool() ? StringTable.Localize("$SHDX_TITLEMAP_MULTI") : "";
-		if (!hal)
-		{
-			bootmsg = String.Format("%s %s %s %s\n%s",
-				StringTable.Localize("$SHDX_TITLEMAP_FINAL1"),
-				StringTable.Localize("$SHDX_TITLEMAP_VERSION_PREFIX"), StringTable.Localize("$SHDX_VERSION"),
-				StringTable.Localize("$SHDX_TITLEMAP_FINAL3"), mp);
-		}
-		else
-		{
-			bootmsg = String.Format("%s %s %s\n%s\n%s %s",
-				StringTable.Localize("$SHDX_TITLEMAP_FINAL1"),
-				StringTable.Localize("$SHDX_TITLEMAP_VERSION_PREFIX"), StringTable.Localize("$SHDX_VERSION"), halstr,
-				StringTable.Localize("$SHDX_TITLEMAP_FINAL3"), mp);
-		}
+		halstr = GetHalForUserName();
+		String mp = CVar.GetCvar('r_multithreaded', players[consoleplayer]).GetBool() ? StringTable.Localize("$SHDX_TITLEMAP_MULTI_ENABLED") : StringTable.Localize("$SHDX_TITLEMAP_MULTI_UNAVAILABLE");
+		
+		bootmsg = String.Format("%s %s %s\n%s\n%s\n%s",
+			StringTable.Localize("$SHDX_TITLEMAP_GAMENAME"), StringTable.Localize("$SHDX_TITLEMAP_VERSION_PREFIX"), StringTable.Localize("$SHDX_VERSION"),
+			halstr,
+			StringTable.Localize("$SHDX_TITLEMAP_PORT"),
+			mp);
+		
 		Screen.DrawText("newsmallfont", Font.CR_WHITE, 0, 0, bootmsg,
 							DTA_VirtualWidthF,  ss.x,
 							DTA_VirtualHeightF, ss.y,
